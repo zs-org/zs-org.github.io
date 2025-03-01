@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZS</title>
+    <title>ZS - A Developer Hub</title>
 
-    <!-- Favicon (Using Your GitHub Icon) -->
+    <!-- Favicon -->
     <link rel="icon" href="https://raw.githubusercontent.com/zs-org/zs-org.github.io/0eaab590010429b518f2822180d6e48a3f5e90bb/icon.png" type="image/png">
 
     <style>
@@ -30,14 +30,32 @@
         p {
             color: #666;
         }
+        .links {
+            margin-top: 15px;
+        }
+        .social-icon {
+            display: inline-block;
+            margin: 10px;
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s;
+        }
+        .social-icon:hover {
+            transform: scale(1.1);
+        }
         .email {
             display: inline-block;
-            margin-top: 10px;
+            margin-top: 15px;
             padding: 10px 15px;
             background: #007BFF;
             color: white;
             text-decoration: none;
             border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .email:hover {
+            background: #0056b3;
         }
     </style>
 
@@ -88,8 +106,26 @@
 <body>
     <div class="container">
         <h1>ZS</h1>
-        <p>A Web based Organization for every work</p>
-        <p>Mail : zs@zsorg.us.kg</p>
+        <p>Also known as zsorg</p>
+        <p>A web-based Organization gathering Developers in one place.</p>
+
+        <!-- Social Links -->
+        <div class="links">
+            <a href="https://github.com/zs-org" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="social-icon">
+            </a>
+            <a href="https://www.reddit.com/r/zsorg/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111589.png" alt="Reddit" class="social-icon">
+            </a>
+            <a href="https://discord.gg/JWKrnhFAMe" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord" class="social-icon">
+            </a>
+            <a href="https://codeberg.org/zsorg" target="_blank">
+                <img src="https://www.svgrepo.com/show/330179/codeberg.svg" alt="Codeberg" class="social-icon">
+            </a>
+        </div>
+
+        <p>Mail: zs@zsorg.us.kg</p>
         <a href="mailto:zs@zsorg.us.kg" class="email">Contact Us</a>
     </div>
 </body>
