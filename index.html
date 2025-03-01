@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZS</title>
 
-    <!-- Favicon (Updated) -->
+    <!-- Favicon -->
     <link rel="icon" href="https://raw.githubusercontent.com/zs-org/zs-org.github.io/refs/heads/main/favicon.ico" type="image/x-icon">
 
     <style>
@@ -32,12 +32,21 @@
         }
         .links {
             margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .social-link {
+            text-decoration: none;
+            color: black;
+            text-align: center;
         }
         .social-icon {
-            display: inline-block;
-            margin: 10px;
+            display: block;
             width: 40px;
             height: 40px;
+            margin: auto;
             transition: transform 0.3s;
         }
         .social-icon:hover {
@@ -96,6 +105,12 @@
               "position": 2,
               "name": "GitHub",
               "item": "https://github.com/zs-org"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Discussions",
+              "item": "https://github.com/orgs/zs-org/discussions"
             }
           ]
         }
@@ -109,22 +124,27 @@
         <p>Also known as zsorg</p>
         <p>A web-based Organization gathering Developers in one place.</p>
 
-        <!-- Social Links -->
+        <!-- Social Links with Labels -->
         <div class="links">
-            <a href="https://github.com/zs-org" target="_blank">
+            <a href="https://github.com/zs-org" target="_blank" class="social-link">
                 <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="social-icon">
+                <span>GitHub</span>
             </a>
-            <a href="https://www.reddit.com/r/zsorg/" target="_blank">
+            <a href="https://www.reddit.com/r/zsorg/" target="_blank" class="social-link">
                 <img src="https://cdn-icons-png.flaticon.com/512/2111/2111589.png" alt="Reddit" class="social-icon">
+                <span>Reddit</span>
             </a>
-            <a href="https://discord.gg/JWKrnhFAMe" target="_blank">
+            <a href="https://discord.gg/JWKrnhFAMe" target="_blank" class="social-link">
                 <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord" class="social-icon">
+                <span>Discord</span>
             </a>
-            <a href="https://codeberg.org/zsorg" target="_blank">
+            <a href="https://codeberg.org/zsorg" target="_blank" class="social-link">
                 <img src="https://www.svgrepo.com/show/330179/codeberg.svg" alt="Codeberg" class="social-icon">
+                <span>Codeberg</span>
             </a>
-            <a href="https://github.com/orgs/zs-org/discussions" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Discussions" class="social-icon">
+            <a href="https://github.com/orgs/zs-org/discussions" target="_blank" class="social-link">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Discussions" class="social-icon">
+                <span>Discussions</span>
             </a>
         </div>
 
