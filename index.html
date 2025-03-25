@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZS</title>
     <!meta name="description" content="ZS, also known as zsorg, A web-based Organization gathering Developers in one place.">
-
     <!-- Favicon -->
-    <link rel="icon" href="https://raw.githubusercontent.com/zs-org/zs-org.github.io/refs/heads/main/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://zsorg.us.kg/favicon.ico">
+    
 
     <style>
         body {
@@ -72,7 +72,11 @@
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
+      "@context" : "https://schema.org",
+      "@type" : "WebSite",
+      "name" : "ZS",
+      "alternateName": ["zs", "zsorg"],
+      "url" : "https://zsorg.us.kg/"
       "@graph": [
         {
           "@type": "WebSite",
@@ -81,17 +85,11 @@
           "url": "https://zsorg.us.kg"
         },
         {
-          "@type": "WebSite",
-          "name": "ZS",
-          "alternateName": "zsorg",
-          "url": "https://zs-org,github.io"
-        },
-        {
           "@type": "Organization",
           "name": "ZS",
           "alternateName": "zsorg",
           "url": "https://zsorg.us.kg",
-          "logo": "https://raw.githubusercontent.com/zs-org/zs-org.github.io/refs/heads/main/favicon.ico",
+          "logo": "https://zsorg.us.kg/favicon.ico",
           "contactPoint": {
             "@type": "ContactPoint",
             "email": "zs@zsorg.us.kg",
